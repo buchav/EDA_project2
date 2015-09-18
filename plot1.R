@@ -10,5 +10,3 @@ with (Year_Emissions, {
         barplot(Emissions,col="blue",names.arg =year ,ylab="PM2.5 in thousands")
         title (main="Total Emissions per Year",xlab="Year")
         })
-
-#test
