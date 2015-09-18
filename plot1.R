@@ -6,6 +6,7 @@ library(dplyr)
 #calculate total emissions per year
 Year_Emissions<-NEI %>% group_by(year) %>% summarise(Emissions=sum(Emissions/1000))
 
+#draw barplot
 with (Year_Emissions, {
         barplot(Emissions,col="blue",names.arg =year ,ylab="PM2.5 in thousands")
         title (main="Total Emissions per Year",xlab="Year")
