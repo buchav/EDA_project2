@@ -5,8 +5,8 @@ siSCC <- readRDS("Source_Classification_Code.rds")
 library(dplyr)
 library(ggplot2)
 
-#find coal combustion -related sources
-coal_combustion<-grep("combustion.*coal",siSCC$SCC.Level.Four,ignore.case = TRUE)
+#find coal combustion -related sources using EI.Sector
+coal_combustion<-grep("comb.*coal",siSCC$EI.Sector,ignore.case = TRUE)
 
 #extract SCC for coal combustion -related sources
 coal_combustion_SCC<-(siSCC %>% slice(coal_combustion))$SCC
