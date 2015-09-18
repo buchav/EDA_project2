@@ -12,5 +12,6 @@ with (Year_Emissions, {
         title (main="Total Emissions per Year",xlab="Year")
         })
 
+#save to PNG
 dev.copy(png,"plot1.png")
 dev.off()

@@ -13,5 +13,6 @@ with (Year_Emissions, {
         title (main="Total Emissions in the Baltimore City",xlab="Year")
 })
 
+#save to PNG
 dev.copy(png,"plot2.png")
 dev.off()
